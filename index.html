@@ -8,7 +8,7 @@
 
   <!-- favicon -->
   <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
-  <title>Static HTML-CSS-JavaScript Projects</title>
+  <title>Expense tracker Project</title>
 
   <!-- FontAwesome CDN  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -23,6 +23,46 @@
 </head>
 
 <body>
+  <article class="container">
+    <h1>Expense Tracker<i class="fa-solid fa-coins"></i></h1>
+    <div class="ovarall-transcation-container">
+      <div class="current-balanace-container">
+        <h3>Your Balance</h3>
+        <h2><i class="fa-solid fa-indian-rupee-sign"></i>00000</h2>
+      </div>
+      <div class="transactions-container">
+        <div class="credit-transaction">
+          <h4>Income</h4>
+          <p><i class="fa-sharp fa-solid fa-rupee-sign"></i> 000</p>
+        </div>
+        <div class="debit-tranaction">
+          <h4>Expenses</h4>
+          <p><i class="fa-sharp fa-solid fa-rupee-sign"></i> 000</p>
+        </div>
+      </div>
+    </div>
+    <div class="transaction-history-container">
+      <h2>History</h2>
+      <div class="transaction-type" id="transaction-type">
+        <span>salary</span>
+        <span>20000</span>
+      </div>
+      <!-- <div class="transaction-type"></div> -->
+    </div>
+    <div class="transaction-input-container">
+      <h2>Make a Transaction</h2>
+      <div class="transaction-input">
+        <form action="" id="form">
+          <label for="transaction-name">Transaction</label>
+          <input type="text" name="transaction-name" id="transaction-name">
+          <label for="credit-debit">Expenses(+ve income / -ve Expenses)</label>
+          <input type="number" name="-credit-debit" id="credit-debit">
+          <input type="submit" value="submit" id="btn-submit">
+        </form>
+      </div>
+  </article>
+
+
   <!-- custom js -->
   <script src="./scripts/script.js"></script>
 </body>

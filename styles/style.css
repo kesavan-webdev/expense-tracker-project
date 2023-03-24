@@ -103,3 +103,46 @@ p {
 }
 
 /* custom css */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.current-balanace-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.transactions-container {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: var(--light-shadow);
+  padding: 2rem 2rem;
+}
+/* .transactions-container credit-transaction {
+  border-right: 2px solid #000;
+} */
+.transaction-type {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  box-shadow: var(--dark-shadow);
+  border-right: 6px solid green;
+  font-size: large;
+  font-weight: bold;
+  width: ;
+}
